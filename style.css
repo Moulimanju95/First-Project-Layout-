@@ -11,10 +11,11 @@ body {
 :root{
     --body-color: #E4E9F7;
     --nav-color: black;
-    --side-nav: #010718;
+  /*   --side-nav: #010718; */
     --text-color: #FFF;
     --search-bar: #F2F2F2;
     --search-text: #010718;
+    --side-nav: black;
 }
 
 body{
@@ -220,7 +221,7 @@ nav .nav-bar .logo a{
 }
 /* product detail section */
 .content {
-   height: 650px;
+   height: 690px;
 }
 .content h2 {
     text-align: center;
@@ -246,6 +247,7 @@ nav .nav-bar .logo a{
     text-align: center;
     width: 320px;
 	box-shadow: 10px 8px 5px 3px rgb(232, 234, 235);
+    overflow: hidden;
 }
 .product p {
     color: black;
@@ -286,13 +288,11 @@ button:hover {
 /*menubar href menu button */
 .btnmodel {
     text-align: center;
-    background-color: #333;
+    background-color: black;
     color: #fff;
     border: none;
 }
-.btnmodel:hover{
-    color: blue;
-}
+
 
 
 /* footer section */
