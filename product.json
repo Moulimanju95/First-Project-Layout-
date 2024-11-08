@@ -1,30 +1,31 @@
 [
-    {
+    
+  {
       "id": 1,
       "name": "pTron",
       "description": "pTron Fusion Go 10W Portable Bluetooth Speaker",
       "price": 449.00,
-      "image": "../website/shopping1.webp" 
+      "image": "../MyEShop/shopping1.webp" 
     },
     {
       "id": 2,
       "name": "BoAt",
       "description": "boAt Storm Call 3 1.83 Inch HD Display Active",
       "price": 1399.00,
-      "image": "../website/shopping2.webp"
+      "image": "../MyEShop/shopping2.webp"
     },
     {
       "id": 3,
       "name": "Samsung",
       "description": "Samsung Ef-dx825 Bluetooth Tablet Keyboard",
       "price": 19500.00,
-      "image": "../website/shopping3.webp"
+      "image": "../MyEShop/shopping3.webp"
     },
     {
       "id": 4,
       "name": "Apple AirPods",
       "description": "Apple AirPods Pro with MagSafe Charging Case",
       "price": 12500.00,
-      "image": "../website/shopping4.webp"
+      "image": "../MyEShop/shopping4.webp"
     }
   ]

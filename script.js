@@ -19,19 +19,40 @@ fetch('product.json')
     });
   })
   .catch(error => console.error('Error:', error));
-  
- 
-//hamburger navbar 
-  const menuToggle = document.getElementById('menu-toggle');
-  const hamburger = document.querySelector('.hamburger');
-  const menu = document.querySelector('.menu');
-  
-  menuToggle.addEventListener('change', () => {
-      hamburger.classList.toggle('active');
-      menu.classList.toggle('active');
-  });  
 
-  
+
+
+
+
+
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+//toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+// toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+
+
+
+
 //Modal pop-up
 var myModal = new bootstrap.Modal(document.getElementById('myModal')); 
 var myModalTrigger = document.getElementById('myModalTrigger'); 
@@ -39,4 +60,3 @@ var myModalTrigger = document.getElementById('myModalTrigger');
 myModalTrigger.addEventListener('click', function () { 
   myModal.show(); 
 }); 
-
